@@ -39,7 +39,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="JEFTINO.RS | Ekskluzivni Katalog - Premium Stil po Najboljim Cenama"
+        title="JEFTINO.RS | SHOP"
         description="Otkrij najnovije modne trendove na JEFTINO.RS. Naš katalog donosi pažljivo birane premium artikle i streetwear komade koji definišu tvoj stil bez visokih troškova."
         keywords="povoljna odeća, online katalog Srbija, streetwear dropovi, premium stil, JEFTINO.RS"
       />
