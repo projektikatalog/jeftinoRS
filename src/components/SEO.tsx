@@ -18,7 +18,7 @@ export const SEO = ({
   type = 'website' 
 }: SEOProps) => {
   const fullTitle = title.includes('JEFTINO.RS') ? title : `${title} | JEFTINO.RS`;
-  const defaultImage = '/hero-logo.png'; 
+  const defaultImage = '/og-photo.png'; 
   const fullImage = image ? (image.startsWith('http') ? image : `${window.location.origin}${image}`) : `${window.location.origin}${defaultImage}`;
   const fullUrl = url ? (url.startsWith('http') ? url : `${window.location.origin}${url}`) : window.location.href;
 
@@ -34,6 +34,8 @@ export const SEO = ({
       <meta property='og:title' content={fullTitle} />
       <meta property='og:description' content={description} />
       <meta property='og:image' content={fullImage} />
+      <meta property='og:image:width' content='1200' />
+      <meta property='og:image:height' content='1200' />
       <meta property='og:url' content={fullUrl} />
       <meta property='og:site_name' content='JEFTINO.RS' />
 
