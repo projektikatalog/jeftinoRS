@@ -1,12 +1,11 @@
-import { Instagram, MessageCircle, Phone, Truck, Banknote, RotateCcw } from "lucide-react";
+import { Instagram, Truck, Banknote, RotateCcw } from "lucide-react";
 import { useState } from "react";
 import { TermsOfServiceModal, PrivacyPolicyModal } from "./LegalModals";
 
 export function Footer() {
   const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
-  const whatsappLink = "https://wa.me/381611234567"; // Placeholder
-  const instagramLink = "https://instagram.com"; // Placeholder
+  const instagramLink = "https://www.instagram.com/jeftino.rs_/";
 
   return (
     <footer className="bg-card border-t border-border mt-12">
@@ -106,31 +105,14 @@ export function Footer() {
             <h4 className="font-bold text-foreground uppercase tracking-wider text-sm">Korisnička Podrška</h4>
             <div className="flex flex-col gap-3">
               <a
-                href={whatsappLink}
+                href={instagramLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 p-3 bg-secondary/50 hover:bg-[#25D366] rounded-2xl transition-all duration-300"
+                className="flex items-center justify-center gap-2 py-3 bg-secondary/50 hover:bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] hover:text-white rounded-2xl transition-all duration-300 font-bold text-sm"
               >
-                <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
-                  <MessageCircle size={20} className="text-[#25D366]" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xs text-muted-foreground font-bold uppercase tracking-tight group-hover:text-white/80">Pišite nam na</span>
-                  <span className="text-sm font-black group-hover:text-white">WhatsApp</span>
-                </div>
+                <Instagram size={18} />
+                <span>Instagram</span>
               </a>
-              
-              <div className="pt-2 flex items-center gap-3">
-                <a
-                  href={instagramLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 py-3 bg-secondary/50 hover:bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] hover:text-white rounded-2xl transition-all duration-300 font-bold text-sm"
-                >
-                  <Instagram size={18} />
-                  <span>Instagram</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>

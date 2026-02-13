@@ -18,7 +18,7 @@ export const SEO = ({
   type = 'website' 
 }: SEOProps) => {
   const fullTitle = title.includes('JEFTINO.RS') ? title : `${title} | JEFTINO.RS`;
-  const defaultImage = '/og-image.png'; // We'll assume this is the hero gradient or similar
+  const defaultImage = '/hero-logo.png'; 
   const fullImage = image ? (image.startsWith('http') ? image : `${window.location.origin}${image}`) : `${window.location.origin}${defaultImage}`;
   const fullUrl = url ? (url.startsWith('http') ? url : `${window.location.origin}${url}`) : window.location.href;
 
