@@ -196,7 +196,7 @@
                    className="flex items-center justify-between p-3 bg-secondary/50 rounded-lg"
                  >
                    <div>
-                     <p className="font-medium text-sm">{order.id}</p>
+                     <p className="font-medium text-sm">{order.order_code || order.id.slice(0, 8)}</p>
                      <p className="text-xs text-muted-foreground">
                       {order.ime_kupca}
                     </p>
