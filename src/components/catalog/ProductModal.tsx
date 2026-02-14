@@ -90,7 +90,7 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               </button>
             </div>
 
-            <div className="p-4 md:p-6 space-y-6">
+            <div className="p-4 md:p-6 space-y-6 pb-20 md:pb-6">
               <div className="aspect-[3/4] rounded-lg overflow-hidden bg-muted relative group">
                 <Carousel className="w-full h-full">
                   <CarouselContent className="h-full">
