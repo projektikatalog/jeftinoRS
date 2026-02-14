@@ -409,6 +409,9 @@ export function CartDrawer() {
                          <span>Poštarina:</span>
                          <span className="font-medium">{formatPrice(shippingCost)}</span>
                        </div>
+                       <p className="text-[10px] text-muted-foreground italic -mt-1 mb-2">
+                         (Iznos poštarine je informativan i može varirati u zavisnosti od adrese isporuke.)
+                       </p>
                        <div className="flex justify-between text-lg font-semibold">
                          <span>UKUPNO:</span>
                          <span className="price-highlight">{formatPrice(totalPrice + shippingCost)}</span>
@@ -651,6 +654,9 @@ export function CartDrawer() {
                      <span>Poštarina:</span>
                      <span className="font-medium">{formatPrice(shippingCost)}</span>
                    </div>
+                   <p className="text-[10px] text-muted-foreground italic -mt-1 mb-2">
+                     (Iznos poštarine je informativan i može varirati u zavisnosti od adrese isporuke.)
+                   </p>
                    <div className="flex justify-between text-lg font-semibold">
                      <span>UKUPNO:</span>
                      <span className="price-highlight">{formatPrice(totalPrice + shippingCost)}</span>
